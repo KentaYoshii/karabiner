@@ -371,6 +371,22 @@
                                         "value": 1
                                     }
                                 ],
+                                "description": "Open -a Claude",
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "shell_command": "open -a Claude" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "hyper_sublayer_o",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
                                 "description": "Open -a 'zoom.us.app'",
                                 "from": {
                                     "key_code": "z",
